@@ -1,0 +1,26 @@
+[
+  {
+    "name": "team_name",
+    "kind": "string"
+  },
+  {
+    "name": "human_name",
+    "kind": "string"
+  },
+  {
+    "name": "people_count",
+    "kind": "number"
+  },
+  {
+    "name": "status",
+    "kind": "autocomplete"
+  },
+  {
+    "name": "lineup",
+    "kind": "autocomplete"
+  },
+  {
+    "name": "is_alone",
+    "kind": "checkbox"
+  }
+]
