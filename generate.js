@@ -1,17 +1,17 @@
 import { Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
-import template from './template.txt' with { type: 'text' }
+import template from './template.js' with { type: 'text' }
 
-let field = (method, route, role) => '' + method + '/' + route + '/' + role
+let key = (method, route, role) => '' + method + '/' + route + '/' + role
 
-let schema = (method, route, role) => '' + method + '_' + route.replaceAll('/', '_') + '_' + role
+let value = (method, route, role) => '' + method + '_' + route.replaceAll('/', '_') + '_' + role
 
 let pathname = (method, route, role) => `'./fields/${method}/${route}/${role}.json'`
 
-let imported = (...a) => `import ${schema(...a)} from ${pathname(...a)} with { type: 'json' }`
+let Import = (...a) => `import ${value(...a)} from ${pathname(...a)} with { type: 'json' }`
 
-let key = (...a) => `  '${field(...a)}': '${field(...a)}'`
+let Field = (...a) => `  '${key(...a)}': '${key(...a)}'`
 
-let value = (...a) => `  '${field(...a)}': ${schema(...a)}`
+let FieldSchema = (...a) => `  '${key(...a)}': ${value(...a)}`
 
 let A = Methods
   .flatMap(method => Routes.map(route => [method, route]))
@@ -32,8 +32,8 @@ Promise
     Bun.write(
       './source/index.js',
       template
-        .replace('/* {{ imports }} */', components.map(a => imported(...a)).join('\n'))
-        .replace('/* {{ fields }} */', components.map(a => key(...a)).join(',\n'))
-        .replace('/* {{ schemas }} */', components.map(a => value(...a)).join(',\n')),
+        .replace('/* imports */', components.map(a => Import(...a)).join('\n'))
+        .replace('/* fields */', components.map(a => Field(...a)).join(', '))
+        .replace('/* schemas */', components.map(a => FieldSchema(...a)).join(', ')),
     )
   )
