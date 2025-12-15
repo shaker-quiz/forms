@@ -1,13 +1,5 @@
 [
   {
-    "name": "ads_from",
-    "kind": "autocomplete"
-  },
-  {
-    "name": "comment",
-    "kind": "text"
-  },
-  {
     "name": "email",
     "kind": "email"
   },
@@ -50,5 +42,9 @@
   {
     "name": "promocode",
     "kind": "string"
+  },
+  {
+    "name": "note",
+    "kind": "text"
   }
 ]
