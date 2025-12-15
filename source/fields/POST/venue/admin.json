@@ -4,12 +4,12 @@
     "kind": "string"
   },
   {
-    "name": "comment",
-    "kind": "text"
+    "name": "street",
+    "kind": "string"
   },
   {
-    "name": "street",
-    "kind": "text"
+    "name": "house_number",
+    "kind": "string"
   },
   {
     "name": "people_capacity",
@@ -21,34 +21,10 @@
   },
   {
     "name": "game_time",
-    "kind": "string"
+    "kind": "time"
   },
   {
-    "name": "floor",
-    "kind": "number"
-  },
-  {
-    "name": "metro",
-    "kind": "text"
-  },
-  {
-    "name": "location_info",
-    "kind": "text"
-  },
-  {
-    "name": "house_number",
-    "kind": "string"
-  },
-  {
-    "name": "status",
-    "kind": "autocomplete"
-  },
-  {
-    "name": "href",
-    "kind": "url"
-  },
-  {
-    "name": "audience",
+    "name": "city_id",
     "kind": "autocomplete"
   }
 ]
