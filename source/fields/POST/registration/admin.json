@@ -50,5 +50,9 @@
   {
     "name": "note",
     "kind": "text"
+  },
+  {
+    "name": "channel",
+    "kind": "autocomplete"
   }
 ]
