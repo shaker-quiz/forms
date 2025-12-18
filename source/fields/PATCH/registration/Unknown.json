@@ -12,30 +12,6 @@
     "kind": "number"
   },
   {
-    "name": "phone",
-    "kind": "tel"
-  },
-  {
-    "name": "email",
-    "kind": "email"
-  },
-  {
-    "name": "vkontakte",
-    "kind": "string"
-  },
-  {
-    "name": "telegramBot",
-    "kind": "string"
-  },
-  {
-    "name": "status",
-    "kind": "autocomplete"
-  },
-  {
-    "name": "lineup",
-    "kind": "autocomplete"
-  },
-  {
     "name": "is_alone",
     "kind": "checkbox"
   },

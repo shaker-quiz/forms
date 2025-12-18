@@ -1,0 +1,42 @@
+[
+  {
+    "name": "name",
+    "kind": "string"
+  },
+  {
+    "name": "street",
+    "kind": "string"
+  },
+  {
+    "name": "house_number",
+    "kind": "string"
+  },
+  {
+    "name": "people_capacity",
+    "kind": "number"
+  },
+  {
+    "name": "team_capacity",
+    "kind": "number"
+  },
+  {
+    "name": "game_time",
+    "kind": "time"
+  },
+  {
+    "name": "audience",
+    "kind": "autocomplete"
+  },
+  {
+    "name": "status",
+    "kind": "autocomplete"
+  },
+  {
+    "name": "location_info",
+    "kind": "text"
+  },
+  {
+    "name": "href",
+    "kind": "url"
+  }
+]

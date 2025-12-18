@@ -1,0 +1,22 @@
+[
+  {
+    "name": "location_id",
+    "kind": "autocomplete"
+  },
+  {
+    "name": "theme_id",
+    "kind": "autocomplete"
+  },
+  {
+    "name": "number",
+    "kind": "number"
+  },
+  {
+    "name": "event_time",
+    "kind": "datetime"
+  },
+  {
+    "name": "status",
+    "kind": "autocomplete"
+  }
+]

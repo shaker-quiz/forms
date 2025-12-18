@@ -1,0 +1,14 @@
+[
+  {
+    "name": "name",
+    "kind": "string"
+  },
+  {
+    "name": "alias",
+    "kind": "string"
+  },
+  {
+    "name": "affilation",
+    "kind": "autocomplete"
+  }
+]
