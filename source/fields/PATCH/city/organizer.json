@@ -10,15 +10,7 @@
       "kind": "string"
     },
     {
-      "name": "country",
-      "kind": "autocomplete"
-    },
-    {
-      "name": "currency_name",
-      "kind": "autocomplete"
-    },
-    {
-      "name": "timezone_name",
+      "name": "affilation",
       "kind": "autocomplete"
     }
   ]

@@ -16,6 +16,10 @@
     {
       "name": "event_time",
       "kind": "datetime"
+    },
+    {
+      "name": "status",
+      "kind": "autocomplete"
     }
   ]
 }

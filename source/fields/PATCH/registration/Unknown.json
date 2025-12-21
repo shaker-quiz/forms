@@ -2,24 +2,16 @@
   "state": "Interactive",
   "fields": [
     {
-      "name": "ads_from",
-      "kind": "autocomplete"
-    },
-    {
-      "name": "comment",
-      "kind": "text"
-    },
-    {
-      "name": "email",
-      "kind": "email"
+      "name": "team_name",
+      "kind": "string"
     },
     {
       "name": "human_name",
       "kind": "string"
     },
     {
-      "name": "team_name",
-      "kind": "string"
+      "name": "people_count",
+      "kind": "number"
     },
     {
       "name": "is_alone",
@@ -40,18 +32,6 @@
     {
       "name": "is_first",
       "kind": "checkbox"
-    },
-    {
-      "name": "people_count",
-      "kind": "number"
-    },
-    {
-      "name": "phone",
-      "kind": "phone"
-    },
-    {
-      "name": "promocode",
-      "kind": "string"
     }
   ]
 }

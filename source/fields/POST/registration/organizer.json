@@ -2,12 +2,8 @@
   "state": "Interactive",
   "fields": [
     {
-      "name": "ads_from",
+      "name": "event_id",
       "kind": "autocomplete"
-    },
-    {
-      "name": "comment",
-      "kind": "text"
     },
     {
       "name": "email",
@@ -52,6 +48,14 @@
     {
       "name": "promocode",
       "kind": "string"
+    },
+    {
+      "name": "note",
+      "kind": "text"
+    },
+    {
+      "name": "channel",
+      "kind": "autocomplete"
     }
   ]
 }

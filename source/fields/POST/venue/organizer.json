@@ -1,54 +1,33 @@
-[
-  {
-    "name": "name",
-    "kind": "string"
-  },
-  {
-    "name": "comment",
-    "kind": "text"
-  },
-  {
-    "name": "street",
-    "kind": "text"
-  },
-  {
-    "name": "people_capacity",
-    "kind": "number"
-  },
-  {
-    "name": "team_capacity",
-    "kind": "number"
-  },
-  {
-    "name": "game_time",
-    "kind": "string"
-  },
-  {
-    "name": "floor",
-    "kind": "number"
-  },
-  {
-    "name": "metro",
-    "kind": "text"
-  },
-  {
-    "name": "location_info",
-    "kind": "text"
-  },
-  {
-    "name": "house_number",
-    "kind": "string"
-  },
-  {
-    "name": "status",
-    "kind": "autocomplete"
-  },
-  {
-    "name": "href",
-    "kind": "url"
-  },
-  {
-    "name": "audience",
-    "kind": "autocomplete"
-  }
-]
+{
+  "state": "Interactive",
+  "fields": [
+    {
+      "name": "name",
+      "kind": "string"
+    },
+    {
+      "name": "street",
+      "kind": "string"
+    },
+    {
+      "name": "house_number",
+      "kind": "string"
+    },
+    {
+      "name": "people_capacity",
+      "kind": "number"
+    },
+    {
+      "name": "team_capacity",
+      "kind": "number"
+    },
+    {
+      "name": "game_time",
+      "kind": "time"
+    },
+    {
+      "name": "city_id",
+      "kind": "autocomplete"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "state": "Interactive",
+  "fields": [
+    {
+      "name": "timezone_name",
+      "kind": "autocomplete"
+    }
+  ]
+}

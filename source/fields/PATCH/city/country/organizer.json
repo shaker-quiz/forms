@@ -1,0 +1,9 @@
+{
+  "state": "Readonly",
+  "fields": [
+    {
+      "name": "id",
+      "kind": "autocomplete"
+    }
+  ]
+}

@@ -2,8 +2,8 @@
   "state": "Interactive",
   "fields": [
     {
-      "name": "email",
-      "kind": "string"
+      "name": "id",
+      "kind": "autocomplete"
     }
   ]
 }
