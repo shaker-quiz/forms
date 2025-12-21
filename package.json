@@ -1,12 +1,12 @@
 {
   "type": "module",
-  "name": "@shakerquiz/fields",
+  "name": "@shakerquiz/forms",
   "version": "0.0.1",
   "author": "yurkimus <yurkimus@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shaker-quiz/fields.git"
+    "url": "https://github.com/shaker-quiz/forms.git"
   },
   "scripts": {
     "prepublishOnly": "bun ./generate.js"
