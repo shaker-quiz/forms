@@ -12,6 +12,14 @@
     {
       "name": "affilation",
       "kind": "autocomplete"
+    },
+    {
+      "name": "vk_group_id",
+      "kind": "string"
+    },
+    {
+      "name": "telegram_channel_id",
+      "kind": "string"
     }
   ]
 }
