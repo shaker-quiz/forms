@@ -14,6 +14,10 @@
       "kind": "autocomplete"
     },
     {
+      "name": "chatapp_version",
+      "kind": "autocomplete"
+    },
+    {
       "name": "vk_group_id",
       "kind": "string"
     },
