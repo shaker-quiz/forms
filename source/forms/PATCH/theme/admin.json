@@ -19,7 +19,8 @@
     },
     {
       "name": "status",
-      "kind": "autocomplete"
+      "kind": "autocomplete",
+      "items": "Static"
     }
   ]
 }

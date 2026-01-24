@@ -3,7 +3,8 @@
   "fields": [
     {
       "name": "event_id",
-      "kind": "autocomplete"
+      "kind": "autocomplete",
+      "items": "Dynamic"
     },
     {
       "name": "email",
@@ -55,7 +56,8 @@
     },
     {
       "name": "channel",
-      "kind": "autocomplete"
+      "kind": "autocomplete",
+      "items": "Static"
     }
   ]
 }
