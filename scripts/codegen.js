@@ -1,6 +1,12 @@
 import template from './template.js' with { type: 'text' }
 
+import { Contracts } from '@shakerquiz/contracts'
 import { Methods, Mode, Roles, Routes } from '@shakerquiz/utilities'
+
+let Forms = [
+  'POST/theme/cover/admin',
+  'PUT/theme/cover/admin',
+]
 
 let path = x => x.join('/')
 
@@ -31,11 +37,23 @@ let formSchema = exists
   .map(x => `'${path(x)}': ${schema(x)}`)
   .join(',\n    ')
 
+let formKind = exists
+  .map(x => {
+    if (Contracts.includes(path(x)))
+      return `'${path(x)}': 'Schema'`
+    else if (Forms.includes(path(x)))
+      return `'${path(x)}': 'FormData'`
+    else
+      return `'${path(x)}': '${Mode['Unknown']}'`
+  })
+  .join(',\n    ')
+
 Bun.write(
   './source/index.js',
   template
     .replace('/* imports */', imports)
     .replace('/* forms */', forms)
     .replace('/* schemas */', schemas)
-    .replace('/* formSchema */', formSchema),
+    .replace('/* form -> schema */', formSchema)
+    .replace('/* form -> kind */', formKind),
 )

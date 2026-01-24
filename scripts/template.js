@@ -14,6 +14,12 @@ export const Schemas = Object.freeze(
 
 export const FormSchema = Object.freeze(
   /** @type {const} */ ({
-    /* formSchema */
+    /* form -> schema */
+  }),
+)
+
+export const FormKind = Object.freeze(
+  /** @type {const} */ ({
+    /* form -> kind */
   }),
 )
