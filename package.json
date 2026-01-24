@@ -9,13 +9,13 @@
     "url": "https://github.com/shaker-quiz/forms.git"
   },
   "scripts": {
-    "prepublishOnly": "bun ./generate.js"
+    "prepublishOnly": "bun ./scripts/codegen.js"
   },
   "files": [
     "source"
   ],
   "exports": "./source/index.js",
   "devDependencies": {
-    "@shakerquiz/utilities": "0.6.8"
+    "@shakerquiz/utilities": "4.0.0"
   }
 }
