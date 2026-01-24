@@ -16,7 +16,7 @@ let exists = await Promise
   .then(Array.from)
 
 let imports = exists
-  .map(x => `import { ${schema(x)} } from './forms/${path(x)}.json'`)
+  .map(x => `import ${schema(x)} from './forms/${path(x)}.json' with { type: 'json' }`)
   .join('\n')
 
 let forms = exists
