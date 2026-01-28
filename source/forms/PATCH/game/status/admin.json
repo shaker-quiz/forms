@@ -3,7 +3,7 @@
   "fields": [
     {
       "name": "status",
-      "kind": "dynamic-autocomplete"
+      "kind": "static-autocomplete"
     }
   ]
 }
