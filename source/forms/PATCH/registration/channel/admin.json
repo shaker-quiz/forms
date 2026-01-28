@@ -1,0 +1,25 @@
+{
+  "state": "Interactive",
+  "fields": [
+    {
+      "name": "channel",
+      "kind": "static-autocomplete"
+    },
+    {
+      "name": "confirmed_channel",
+      "kind": "static-autocomplete"
+    },
+    {
+      "name": "email",
+      "kind": "email"
+    },
+    {
+      "name": "vkontakte",
+      "kind": "string"
+    },
+    {
+      "name": "telegramBot",
+      "kind": "string"
+    }
+  ]
+}

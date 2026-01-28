@@ -1,0 +1,9 @@
+{
+  "state": "Interactive",
+  "fields": [
+    {
+      "name": "lineup",
+      "kind": "static-autocomplete"
+    }
+  ]
+}

@@ -18,52 +18,8 @@
       "kind": "phone"
     },
     {
-      "name": "email",
-      "kind": "email"
-    },
-    {
-      "name": "channel",
-      "kind": "static-autocomplete"
-    },
-    {
-      "name": "confirmed_channel",
-      "kind": "static-autocomplete"
-    },
-    {
-      "name": "vkontakte",
-      "kind": "string"
-    },
-    {
-      "name": "telegramBot",
-      "kind": "string"
-    },
-    {
-      "name": "status",
-      "kind": "static-autocomplete"
-    },
-    {
-      "name": "lineup",
-      "kind": "static-autocomplete"
-    },
-    {
-      "name": "is_alone",
-      "kind": "checkbox"
-    },
-    {
-      "name": "is_birthday",
-      "kind": "checkbox"
-    },
-    {
       "name": "celebrant",
       "kind": "string"
-    },
-    {
-      "name": "is_extensible",
-      "kind": "checkbox"
-    },
-    {
-      "name": "is_first",
-      "kind": "checkbox"
     }
   ]
 }

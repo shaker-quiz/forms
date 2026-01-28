@@ -1,0 +1,21 @@
+{
+  "state": "Interactive",
+  "fields": [
+    {
+      "name": "is_alone",
+      "kind": "checkbox"
+    },
+    {
+      "name": "is_birthday",
+      "kind": "checkbox"
+    },
+    {
+      "name": "is_extensible",
+      "kind": "checkbox"
+    },
+    {
+      "name": "is_first",
+      "kind": "checkbox"
+    }
+  ]
+}
