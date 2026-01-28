@@ -3,11 +3,13 @@
   "fields": [
     {
       "name": "location_id",
-      "kind": "dynamic-autocomplete"
+      "kind": "dynamic-autocomplete",
+      "state": "Readonly"
     },
     {
       "name": "theme_id",
-      "kind": "dynamic-autocomplete"
+      "kind": "dynamic-autocomplete",
+      "state": "Readonly"
     },
     {
       "name": "number",
@@ -16,10 +18,6 @@
     {
       "name": "event_time",
       "kind": "datetime"
-    },
-    {
-      "name": "status",
-      "kind": "static-autocomplete"
     }
   ]
 }
