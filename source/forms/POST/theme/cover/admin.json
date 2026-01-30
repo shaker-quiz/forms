@@ -2,7 +2,7 @@
   "state": "Interactive",
   "fields": [
     {
-      "name": "cover",
+      "name": "file",
       "kind": "file"
     }
   ]
