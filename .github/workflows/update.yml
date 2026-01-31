@@ -4,15 +4,20 @@ on:
   workflow_dispatch:
     inputs:
       utilities:
-        type: boolean
-        description: "@shakerquiz/utilities"
+        description: "@shakerquiz/utilities@aquamarine"
         required: false
-        default: false
+        default: true
+        type: boolean
       contracts:
-        type: boolean
-        description: "@shakerquiz/contracts"
+        description: "@shakerquiz/contracts@latest"
         required: false
-        default: false
+        default: true
+        type: boolean
+      pr:
+        description: "Open PR ?"
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: write
@@ -29,6 +34,7 @@ jobs:
           node-version: 24
 
       - name: Create branch
+        if: ${{ inputs.pr }}
         run: |
           BRANCH="chore/bump-shakerquiz-$(date +%Y%m%d-%H%M%S)"
           echo "BRANCH=$BRANCH" >> "$GITHUB_ENV"
@@ -51,9 +57,10 @@ jobs:
 
       - name: Push branch
         run: |
-          git push -u origin "$BRANCH"
+          git push origin HEAD
 
       - name: Open PR
+        if: ${{ inputs.pr }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -61,3 +68,12 @@ jobs:
             --title "chore: bump @shakerquiz packages" \
             --body "Automated dependency bump via workflow_dispatch." \
             --head "$BRANCH" || true
+
+  publish:
+    needs: bump
+    if: ${{ inputs.pr == false }}
+    uses: ./.github/workflows/publish.yml
+    secrets: inherit
+    permissions:
+      id-token: write
+      contents: write
